@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Preencha aqui o seu cadastro</h1>
+    </header>
+    <form class="formulario">
+
+        <fieldset class="body-form">
+
+            <div class="name">
+                <label for="name">Nome</label><br>
+                <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
+            </div>
+
+            <section class="campos-info1">
+                
+                <div>         
+                    <label for="cpf">CPF</label><br>
+                    <input type="number" name="cpf" id="cpf" placeholder="000.000.000-00" required>
+                </div>
+
+                <div>
+                    <label for="data">Data de nascimento</label><br>
+                    <input type="date" name="data" id="data" required>
+                </div>
+                
+                <div>
+                    <label for="sexo">Sexo</label><br>
+                    <label for="sexo-masculino"><input  type="radio" for="sexo-masculino" name="sexo-masculino" id="sexo-masculino">Masculino</label>
+                    <label for="sexo-feminino"><input  type="radio" for="sexo-feminino" name="sexo-feminino" id="sexo-masculino">feminino</label>
+                </div>
+                
+            </section>
+
+            <section class="campos-info2">
+
+                <div class="form-group">
+                    <label for="estado-civil">Estado Civil</label><br>
+                    <select id="estado-civil">
+                        <option value="solteiro">Solteiro(a)</option>
+                        <option>Casado(a)</option>
+                        <option>Divorciado(a)</option>
+                        <option>Viúvo(a)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="renda-mensal">Renda mensal</label><br>
+                    <input type="number" name="renda-mensal" id="renda-mensal" placeholder="R$ 0,00" required>
+                </div>
+
+            </section>
+
+            <div class="subtitulo">
+                <h2>Endereço</h2>
+            </div>    
+            
+            
+            <section class="campos-info3">
+                <div>
+                    <label for="logradouro">Logradouro</label><br>
+                    <input type="text" name="logradouro" id="logradouro" placeholder="Ex.: Rua, Estrada, Avenida" required>
+                </div>
+        
+                <div>
+                    <label for="numero">Número</label><br>
+                    <input type="number" name="número" id="numero" placeholder="N°" required>
+                </div>
+
+                <div>
+                    <label for="complemento">Complemento</label><br>
+                    <input type="text" name="Complemento" id="complemento" placeholder="Ex.: Bloco, Casa, Apartamento" required>
+                </div>
+            </section>
+
+            <section class="campos-info4">
+                <div class="form-group">
+                    <label for="estado">Estado</label><br>
+                    <select id="estado">
+                        <option>Acre</option>
+                        <option>Brasilia</option>
+                        <option>Curitiba</option>
+                        <option>Rio de janeiro</option>
+                        <option>São Paulo</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="cidade">Cidade</label><br>
+                    <input type="text" name="Cidade" id="cidade" placeholder="Sua cidade" required>
+                </div>                   
+                  
+            </section>
+            
+            <div>
+            <button class="btn" type="submit">Cadastro</button>
+            </div>
+            
+        </fieldset>
+       
+    </form>
+
+    
+
+</body>
+</html>
